@@ -67,7 +67,7 @@ $(function() {
   const options = {
     containers: ['#sb-dynamic-content', '#sb-dynamic-menu'],
     animateHistoryBrowsing: true,
-    linkSelector: '.sb-navigation a:not([data-no-swup]) , a:not([data-no-swup])',
+    linkSelector: 'a[href^="/"]:not([data-no-swup]), a[href^="index"]:not([data-no-swup]), a[href^="menu"]:not([data-no-swup]), a[href^="hakkimizda"]:not([data-no-swup]), a[href^="iletisim"]:not([data-no-swup])',
   };
   const swup = new Swup(options);
   /***************************
